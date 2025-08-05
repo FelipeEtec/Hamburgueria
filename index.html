@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FF's Hamburgueria</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>FF's</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section - Sobre -->
+    <section id="sobre">
+        <div class="container">
+            <h2>Bem-vindo ao FF's!</h2>
+            <p>Especializados em lanches deliciosos e baldes de frango frito. Uma experiência única de sabor e qualidade!</p>
+            <img src="img/hamburguer classico.webp" alt="Hamburguer delicioso">
+        </div>
+    </section>
+
+    <!-- Section - Cardápio -->
+    <section id="cardapio">
+        <div class="container">
+            <h2>Nosso Cardápio</h2>
+            <div class="menu">
+                <div class="item">
+                    <img src="img/hamburguer classico.webp" alt="Hamburguer 1">
+                    <h3>Hamburguer Clássico</h3>
+                    <p>Com carne suculenta, queijo derretido e molho especial.</p>
+                </div>
+                <div class="item">
+                    <img src="img/frango frito.webp" alt="Baldes de frango">
+                    <h3>Balde de Frango Frito</h3>
+                    <p>Crocante e delicioso, o melhor frango frito da cidade.</p>
+                </div>
+                <div class="item">
+                    <img src="img/hamburguer bbq.webp" alt="Hamburguer 2">
+                    <h3>Hamburguer BBQ</h3>
+                    <p>Com molho barbecue e cebolas caramelizadas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section - Contato -->
+    <section id="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 FF's Hamburgueria. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
