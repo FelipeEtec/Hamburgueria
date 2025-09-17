@@ -10,66 +10,81 @@
 
     <!-- Header -->
     <header>
-        <div class="logo">
-            <h1>FF's</h1>
+        <div class="container header-content">
+            <h1 class="logo">🍔 FF's Hamburgueria</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#cardapio">Cardápio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#cardapio">Cardápio</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <!-- Section - Sobre -->
-    <section id="sobre">
-        <div class="container">
-            <h2>Bem-vindo ao FF's!</h2>
-            <p>Especializados em lanches deliciosos e baldes de frango frito. Uma experiência única de sabor e qualidade!</p>
-            <img src="img/hamburguer classico.webp" alt="Hamburguer delicioso">
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>O Melhor Hambúrguer da Cidade</h2>
+            <p>Sabores irresistíveis, ingredientes frescos e o frango frito mais crocante que você já provou.</p>
+            <a href="#cardapio" class="btn">Ver Cardápio</a>
         </div>
     </section>
 
-    <!-- Section - Cardápio -->
+    <!-- Sobre -->
+    <section id="sobre">
+        <div class="container sobre-content">
+            <div>
+                <h2>Bem-vindo ao FF's!</h2>
+                <p>Somos apaixonados por hambúrgueres artesanais e frango frito. Nosso cardápio foi criado para quem ama comida de qualidade, feita com carinho e ingredientes selecionados.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cardápio -->
     <section id="cardapio">
         <div class="container">
             <h2>Nosso Cardápio</h2>
             <div class="menu">
                 <div class="item">
-                    <img src="img/hamburguer classico.webp" alt="Hamburguer 1">
-                    <h3>Hamburguer Clássico</h3>
-                    <p>Com carne suculenta, queijo derretido e molho especial.</p>
+                    <img src="img/hamburguer classico.webp" alt="Hamburguer Clássico">
+                    <h3>Hambúrguer Clássico</h3>
+                    <p>Pão macio, carne suculenta, queijo derretido e molho especial.</p>
+                    <button class="btn">Adicionar ao Pedido</button>
                 </div>
+
                 <div class="item">
-                    <img src="img/frango frito.webp" alt="Baldes de frango">
+                    <img src="img/frango frito.webp" alt="Frango Frito">
                     <h3>Balde de Frango Frito</h3>
-                    <p>Crocante e delicioso, o melhor frango frito da cidade.</p>
+                    <p>Crocante, dourado e cheio de sabor. O frango frito que vai conquistar você!</p>
+                    <button class="btn">Adicionar ao Pedido</button>
                 </div>
+
                 <div class="item">
-                    <img src="img/hamburguer bbq.webp" alt="Hamburguer 2">
-                    <h3>Hamburguer BBQ</h3>
-                    <p>Com molho barbecue e cebolas caramelizadas.</p>
+                    <img src="img/hamburguer bbq.webp" alt="Hamburguer BBQ">
+                    <h3>Hambúrguer BBQ</h3>
+                    <p>Carne grelhada, molho barbecue e cebolas caramelizadas.</p>
+                    <button class="btn">Adicionar ao Pedido</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section - Contato -->
+    <!-- Contato -->
     <section id="contato">
         <div class="container">
             <h2>Entre em Contato</h2>
             <form>
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome">
 
                 <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail">
 
                 <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem"></textarea>
 
-                <button type="submit">Enviar</button>
+                <button type="submit" class="btn">Enviar</button>
             </form>
         </div>
     </section>

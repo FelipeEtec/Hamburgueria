@@ -1,126 +1,164 @@
-/* Resetando estilos padrões do navegador */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos gerais */
+/* Base */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
     line-height: 1.6;
-    margin: 0;
+    color: #333;
+    background-color: #fafafa;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradiente moderno */
+    background: linear-gradient(90deg, #ff7e5f, #e85631);
     color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-header .logo h1 {
-    font-size: 2.8rem;
-    font-family: 'Pacifico', cursive; /* Fonte cursiva e estilizada */
-    letter-spacing: 2px;
-    margin-bottom: 10px;
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header nav ul {
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 10px;
+    gap: 25px;
 }
 
-header nav ul li {
-    display: inline;
-}
-
-header nav ul li a {
+nav ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 1.2rem;
-    transition: color 0.3s, transform 0.3s;
-    text-transform: uppercase;
+    font-size: 1.1rem;
+    transition: color 0.3s;
 }
 
-header nav ul li a:hover {
+nav ul li a:hover {
     color: #ffdb58;
-    transform: scale(1.1);
+}
+
+/* Hero */
+.hero {
+    background: url('HAMBURGUERIA/img/hamburguer bbq.webp') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    height: 100vh;       /* ocupa a altura da janela */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hero-text h2 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.btn {
+    background: #ff7e5f;
+    color: #ffffff;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #feb47b;
 }
 
 /* Sobre */
 #sobre {
-    background-color: #fff;
-    padding: 60px 20px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 70px 20px;
+    background: #fff;
 }
 
-#sobre h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-#sobre p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    color: #666;
-    line-height: 1.8;
+.sobre-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
 #sobre img {
-    width: 80%;
-    max-width: 600px;
-    border-radius: 10px;
-    margin-top: 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#sobre h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+#sobre p {
+    font-size: 1.1rem;
+    color: #555;
 }
 
 /* Cardápio */
 #cardapio {
-    background-color: #f4f4f4;
-    padding: 60px 20px;
+    padding: 70px 20px;
+    background: #f4f4f4;
     text-align: center;
 }
 
 #cardapio h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: #333;
-    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
 }
 
 .menu {
     display: flex;
-    justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
-    margin-top: 30px;
+    justify-content: center;
 }
 
 .menu .item {
-    background-color: #fff;
+    background: #fff;
     width: 280px;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
     text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .menu .item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
 }
 
 .menu .item img {
@@ -132,112 +170,71 @@ header nav ul li a:hover {
 }
 
 .menu .item h3 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
-    font-weight: 700;
-    color: #333;
 }
 
 .menu .item p {
     font-size: 1rem;
-    color: #777;
-    line-height: 1.5;
+    color: #666;
+    margin-bottom: 15px;
 }
 
 /* Contato */
 #contato {
-    background-color: #fff;
-    padding: 60px 20px;
+    background: #fff;
+    padding: 70px 20px;
 }
 
 #contato h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #333;
     text-align: center;
+    font-size: 2rem;
     margin-bottom: 30px;
 }
 
 form {
+    max-width: 600px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    max-width: 600px;
-    margin: 0 auto;
 }
 
-form label {
-    font-size: 1.1rem;
-    color: #555;
-}
-
-form input, form textarea {
-    padding: 15px;
+form input,
+form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
     font-size: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    outline: none;
-    transition: border-color 0.3s;
 }
 
-form input:focus, form textarea:focus {
+form input:focus,
+form textarea:focus {
     border-color: #ff7e5f;
-}
-
-form button {
-    background-color: #ff7e5f;
-    color: #fff;
-    padding: 15px;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-}
-
-form button:hover {
-    background-color: #feb47b;
 }
 
 /* Footer */
 footer {
-    background-color: #222;
-    color: #fff;
+    background: #222;
+    color: #aaa;
     text-align: center;
     padding: 20px;
-    margin-top: 50px;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
-footer p {
-    color: #bbb;
-}
-
-footer p a {
-    color: #ff7e5f;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer p a:hover {
-    text-decoration: underline;
-}
-
-/* Responsividade */
+/* Responsivo */
 @media (max-width: 768px) {
-    header nav ul {
+    .sobre-content {
         flex-direction: column;
-        gap: 15px;
+        text-align: center;
     }
 
     .menu {
         flex-direction: column;
-        gap: 40px;
+        align-items: center;
     }
 
-    .menu .item {
-        width: 100%;
-        padding: 20px;
-        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    .hero-text h2 {
+        font-size: 2rem;
     }
 }
