@@ -10,6 +10,8 @@ class Lanche:
         Exibe as informações do lanche cadastrado. (nome, preço e ingredientes)
         """
         print(f"Sanduiche: {self.nome}; Preço: R${self.preco:.2f}; Ingredientes: {self.ingredientes}")
+        # Fim do método exibirLanche
+
 # Fim da classe Lanche
 
 
