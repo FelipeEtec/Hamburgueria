@@ -1,7 +1,7 @@
-class Lanche:
-    def __init__(self, nome, preco, ingredientes):
-        self.nome = nome
-        self.preco = preco
+from itemCardapio import ItemCardapio
+class Lanche(ItemCardapio):
+    def __init__(self, nome, preco, categoria, ingredientes):
+        super().__init__(nome, preco, categoria)
         self.ingredientes = ingredientes
     # Fim do construtor __init__()
 
@@ -9,7 +9,8 @@ class Lanche:
         """
         Exibe as informações do lanche cadastrado. (nome, preço e ingredientes)
         """
-        print(f"Sanduiche: {self.nome}; Preço: R${self.preco:.2f}; Ingredientes: {self.ingredientes}")
+        super().exibirItem()
+        print(f"Ingredientes: {self.ingredientes}")
         # Fim do método exibirLanche
 
 # Fim da classe Lanche
